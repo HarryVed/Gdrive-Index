@@ -7,10 +7,10 @@ const clientId = '';
 const clientSecret = '';
 const grantType = 'authorization_code';
 const redirectURI = 'https://example.com';
-const jsURL = 'https://gitlab.com/GoogleDriveIndex/Google-Drive-Index/-/raw/master/worker/worker-super.js';
+const jsURL = 'https://raw.githubusercontent.com/HarryVed/Gdrive-Index/master/worker/worker-super.js';
 
 async function handleRequest(request) {
-    let title = getParameterByName(request.url, 'site_name') || 'Bhadoo Drive Index';
+    let title = getParameterByName(request.url, 'site_name') || 'Jitish Drive Index';
     let auth_code = getParameterByName(request.url, 'auth_code');
     let root = getParameterByName(request.url, 'root') || 'root';
     let user = getParameterByName(request.url, 'user') || '';
@@ -45,7 +45,7 @@ async function handleRequest(request) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
-    <title>Bhadoo Drive Index - Beta</title>
+    <title>Jitish Drive Index - Beta</title>
     <link rel="icon" type="image/x-icon" href="https://www.cloudflare.com/favicon.ico"/>
     <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.0.0/dist/slate/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
